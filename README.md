@@ -40,6 +40,6 @@ git clone project, and build:
     
 3. Remove all
    
-   `kubectl apply -f config/samples/ops_v1alpha1_webserver.yaml`
+   `kubectl delete -f config/samples/ops_v1alpha1_webserver.yaml`
    
    `make undeploy`

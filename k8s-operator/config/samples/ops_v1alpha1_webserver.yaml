@@ -1,0 +1,17 @@
+apiVersion: ops.test.luxor/v1alpha1
+kind: WebServer
+metadata:
+  name: webserver
+spec:
+  size: 3
+  members:
+    - m.nazarenko
+  environments:
+    - name: prod
+      resources:
+        requests:
+          cpu: 1
+          memory: 1Gi
+        limits:
+          cpu: 1
+          memory: 1Gi
